@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <h1>Inscription</h1>
+    <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+        <div class="field">
+            {{ field.label_tag }}
+            {{ field }}
+            {% if field.errors %}
+            <ul class="errors">
+                {% for error in field.errors %}
+                <li>{{ error }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endfor %}
+        <button type="submit">S'inscrire</button>
+    </form>
+</body>
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var formulaire = document.querySelector('form');
+
+        formulaire.addEventListener('submit', function (event) {
+            var champsRequis = formulaire.querySelectorAll('[required]');
+
+            champsRequis.forEach(function (champ) {
+                if (champ.value === '') {
+                    event.preventDefault(); // Empêche l'envoi du formulaire
+
+                    var messageErreur = champ.parentNode.querySelector('.message-erreur');
+                    messageErreur.style.display = 'block'; // Affiche le message d'erreur
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}
+
+</html>

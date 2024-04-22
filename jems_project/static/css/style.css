@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------style personnalisé  de la page d'accueil----------------  */
+.navbar {
+    background-color: rgb(21, 34, 53);
+    /* Couleur de fond de la barre de navigation */
+}
+
+.navbar-dark .navbar-brand {
+    color: rgb(250, 153, 29);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(250, 153, 29);
+    /* Couleur du texte de la barre de navigation */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+    /* Couleur du texte au survol */
+}
+
+
+/* .container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+} */
+
+/*----------------style personnalisé  de la page de connexion----------------  */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.login-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}
+
+/*----------------style personnalisé  de la page d'inscription---------------  */
+
+/* Style pour le formulaire */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style pour les titres */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour les étiquettes */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style pour les champs de formulaire */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    /* Pour inclure le padding dans la largeur */
+}
+
+/* Style pour le bouton */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Style pour le bouton au survol */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
